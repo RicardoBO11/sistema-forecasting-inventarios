@@ -4,7 +4,7 @@
 *   **Nombre del Proyecto:** SmartStock: Predictive Demand & Inventory Optimization Pipeline
 *   **Especialidad:** Data Science / Data Analytics (DS/DA) & Data Engineering
 *   **Fuente del Proyecto:** Dataset transaccional público: *E-Commerce Data (Actual Transactions from a UK Retailer)*.
-*   **Link a la Fuente Original:** [Kaggle - E-Commerce Data](https://kaggle.com)
+*   **Link a la Fuente Original:** [Kaggle - E-Commerce Data](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
 *   **Link al Proyecto Publicado:** *[https://github.com/RicardoBO11/sistema-forecasting-inventarios]*
 
 ---
