@@ -33,7 +33,7 @@ Optimizar la eficiencia operativa y el capital de trabajo de un e-commerce globa
 ## 5. QUÉ SE HIZO Y CÓMO
 
 ### Arquitectura y Estructura del Repositorio
-
+```text
 proyecto_forecasting_inventario/
 ├── database/
 │   └── consultas_inventario.sql      # Índices y Vistas de Segmentación ABC (Pareto)
@@ -44,7 +44,7 @@ proyecto_forecasting_inventario/
 ├── scripts/
 │   └── forecasting_inventario.py     # Pipeline ETL modular y optimizado en Python
 └── README.md                         # Documentación técnica 
-
+```
 ### Decisiones Técnicas Clave
 *   **Optimización de Memoria RAM (Data Engineering):** Forzado de un esquema estricto (`dtype`) al leer el CSV con Pandas utilizando `int32` para cantidades y `float32` para precios unitarios, reduciendo el consumo de memoria en un **60%** sobre los 540,000 registros históricos.
 *   **Segmentación Avanzada en SQL:** Creación de la vista `vista_segmentacion_abc_pareto` en PostgreSQL utilizando expresiones comunes de tabla (CTEs) y funciones de ventana analíticas para clasificar de manera automática los SKUs según su aporte acumulado a la facturación global.
