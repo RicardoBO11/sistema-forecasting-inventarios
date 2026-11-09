@@ -1,11 +1,11 @@
-# 📊 SmartStock: Sistema de Forecasting y Optimización de Inventarios
+# SmartStock: Sistema de Forecasting y Optimización de Inventarios
 
 ## 1. INFORMACIÓN GENERAL
 *   **Nombre del Proyecto:** SmartStock: Predictive Demand & Inventory Optimization Pipeline
 *   **Especialidad:** Data Science / Data Analytics (DS/DA) & Data Engineering
 *   **Fuente del Proyecto:** Dataset transaccional público: *E-Commerce Data (Actual Transactions from a UK Retailer)*.
 *   **Link a la Fuente Original:** [Kaggle - E-Commerce Data](https://kaggle.com)
-*   **Link al Proyecto Publicado:** *[Pendiente: Inserta aquí el enlace de tu repositorio de GitHub]*
+*   **Link al Proyecto Publicado:** *[https://github.com/RicardoBO11/sistema-forecasting-inventarios]*
 
 ---
 
@@ -32,7 +32,7 @@ Optimizar la eficiencia operativa y el capital de trabajo de un e-commerce globa
 
 ## 5. QUÉ SE HIZO Y CÓMO
 
-### 🏗️ Arquitectura y Estructura del Repositorio
+### Arquitectura y Estructura del Repositorio
 
 proyecto_forecasting_inventario/
 ├── database/
@@ -45,7 +45,7 @@ proyecto_forecasting_inventario/
 │   └── forecasting_inventario.py     # Pipeline ETL modular y optimizado en Python
 └── README.md                         # Documentación técnica 
 
-### ⚙️ Decisiones Técnicas Clave
+### Decisiones Técnicas Clave
 *   **Optimización de Memoria RAM (Data Engineering):** Forzado de un esquema estricto (`dtype`) al leer el CSV con Pandas utilizando `int32` para cantidades y `float32` para precios unitarios, reduciendo el consumo de memoria en un **60%** sobre los 540,000 registros históricos.
 *   **Segmentación Avanzada en SQL:** Creación de la vista `vista_segmentacion_abc_pareto` en PostgreSQL utilizando expresiones comunes de tabla (CTEs) y funciones de ventana analíticas para clasificar de manera automática los SKUs según su aporte acumulado a la facturación global.
 *   **Estrategia de Indexación:** Creación de índices compuestos B-Tree (`idx_transactions_stock_date`) para acelerar las agregaciones analíticas cronológicas de minutos a milisegundos.
@@ -54,7 +54,6 @@ proyecto_forecasting_inventario/
 
 ## 6. RESULTADOS
 *   **Aislamiento del Core de Negocio:** La segmentación SQL demostró que un grupo selecto de productos (Categoría A) representa el 80% de la facturación, lo que permitió enfocar el modelo predictivo de machine learning exclusivamente en los artículos de alta prioridad comercial.
-*   **Precisión del Pronóstico:** *[Pendiente por completar: Inserta aquí el valor final del MAPE y MAE una vez que corras las celdas del modelo predictivo con Prophet / ARIMA]*.
 
 ---
 
